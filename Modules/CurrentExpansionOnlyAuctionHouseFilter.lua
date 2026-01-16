@@ -1,3 +1,5 @@
+local addonName, Private = ...
+
 -- Auction House: Default "Current Expansion only" filter
 local function FocusSearchBar(editBox, shouldFocus)
 	shouldFocus = shouldFocus or false

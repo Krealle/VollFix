@@ -1,3 +1,5 @@
+local addonName, Private = ...
+
 EventRegistry:RegisterFrameEventAndCallback("GROUP_JOINED", function()
 	if IsInRaid() then
 		return false

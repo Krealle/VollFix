@@ -1,3 +1,5 @@
+local addonName, Private = ...
+
 -- Tyfon Character Sheet
 local characterOpen = false
 

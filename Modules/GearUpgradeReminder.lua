@@ -1,4 +1,4 @@
-local Private = select(2, ...)
+local addonName, Private = ...
 
 -- https://www.raidbots.com/static/data/xptr/bonuses.json
 -- copy(JSON.stringify(Object.values(JSON.parse($0.textContent)).filter(x => x.upgrade?.seasonId === 30).reduce((acc, data) => {

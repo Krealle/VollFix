@@ -1,3 +1,5 @@
+local addonName, Private = ...
+
 EventUtil.ContinueOnAddOnLoaded("MythicDungeonTools", function()
 	if not MDT then
 		return
@@ -389,7 +391,7 @@ EventUtil.ContinueOnAddOnLoaded("MythicDungeonTools", function()
 										end
 
 										if (enemy.id == 95674 or enemy.id == 99868) and fenrir > 1 then
-										-- ignore additional Fenrirs if he's in more than 1 pull
+											-- ignore additional Fenrirs if he's in more than 1 pull
 										elseif enemy.id == 164556 or enemy.id == 164555 then
 											-- Manastorms, separate into 2 pulls so they're not simmed together as a 2 target fight
 											sub_pulls = 2
@@ -500,7 +502,7 @@ EventUtil.ContinueOnAddOnLoaded("MythicDungeonTools", function()
 													.. enemy.creatureType
 												blight_boss = 4
 											end
-										-- ignore whatever boss is 4th since it isn't needed
+											-- ignore whatever boss is 4th since it isn't needed
 										elseif enemy.id == 98965 or enemy.id == 98970 then
 											sub_pulls = 2
 											local fixed_name = string.gsub(enemy.name, " ", "_")
@@ -626,7 +628,7 @@ EventUtil.ContinueOnAddOnLoaded("MythicDungeonTools", function()
 												end
 
 												if foundBoss then
-												-- ignore since the boss handling will add this lieutenant
+													-- ignore since the boss handling will add this lieutenant
 												else
 													-- handle normally
 													if e > 0 then

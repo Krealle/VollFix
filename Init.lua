@@ -1,5 +1,27 @@
 local addonName, Private = ...
 
+Private.LoginFnQueue = {}
+Private.IsXeph = false
+
+EventUtil.ContinueOnAddOnLoaded(addonName, function()
+	local name = UnitName("player")
+	local realm = GetNormalizedRealmName()
+
+	if name == "Xephyris" and realm == "Blackrock" then
+		Private.IsXeph = true
+	end
+
+	print(name, realm, Private.IsXeph)
+
+	for i = 1, #Private.LoginFnQueue do
+		local fn = Private.LoginFnQueue[i]
+		print(i, fn)
+		fn()
+	end
+
+	table.wipe(Private.LoginFnQueue)
+end)
+
 -- Zone Change Print
 -- do
 -- 	local seenMaps = {}

@@ -1,4 +1,5 @@
--- Stats Formatting
+local addonName, Private = ...
+
 hooksecurefunc("PaperDollFrame_SetItemLevel", function()
 	CharacterStatsPane.ItemLevelFrame.Value:SetText(select(2, GetAverageItemLevel()))
 end)

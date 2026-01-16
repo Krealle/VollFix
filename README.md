@@ -1,0 +1,38 @@
+Collection of former utiltiy WeakAuras or similar:
+
+- AddonSuiteProfileSwapReminder
+  - reminder for myself to swap addon profile depending on whether I'm in raid or not
+- AutoGreet
+  - the equivalent of /p hi
+- BuffWarningPatch
+  - removes the stupid alpha change for expiring auras
+- CharacterSheetImprovements
+  - extends the default ui character sheed with enchants, gems, and item level
+- CharacterStatsFormatting
+  - shows stats more exhaustively
+- CleanNamesInInstances
+  - port of https://wago.io/M13VlqtM-
+- CurrentExpansionOnlyAuctionHouseFilter
+  - port of https://wago.io/FW6qfBuIH
+- DraggableFrames
+  - makes a couple additional default ui frames draggable
+- EncounterProgressWhisper
+- FocusCastBar
+  - a simple focus cast bar, currently evoker only, in the top center of your screen. includes coloring based on whether your interrupt is ready and whether the cast is interruptible
+- GearUpgradeRankTooltipRenamer
+  - port of https://wago.io/78z7JtUxS
+- GearUpgradeReminder
+  - port of https://wago.io/DA3OzoIsi
+- MDTSim
+  - port of https://wago.io/LTwpBiuz_
+- Stopwatch
+  - modifies the ingame stopwatch to act as combat timer. has ui elemenets hidden such as hours, buttons and background
+- TargetShield
+  - shows remaining amount of absorb on the target
+- TalentReminders
+- TurnSpeed
+  - reverts turn speed back to 180 should it get lowered
+- UIScale
+  - port of !UIScale addon, but doesn't throw an error when reloading ui mid-combat
+- WeakAuras
+  - /wa binding for the cooldown manager...

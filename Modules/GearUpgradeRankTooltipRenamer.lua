@@ -1,4 +1,4 @@
-local Private = select(2, ...)
+local addonName, Private = ...
 
 -- Gear Upgrade Rank Tooltip Renamer
 local CRESTS = Private.IsMidnight
