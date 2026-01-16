@@ -15,6 +15,7 @@ Modules/CurrentExpansionOnlyAuctionHouseFilter.lua
 Modules/DraggableFrames.lua
 Modules/EncounterProgressWhisper.lua
 Modules/FocusCastBar.lua
+Modules/FocusMarkerAnnouncement.lua
 Modules/GearUpgradeRankTooltipRenamer.lua
 Modules/GearUpgradeReminder.lua
 Modules/MDTSim.lua

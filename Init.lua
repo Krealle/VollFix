@@ -13,7 +13,6 @@ EventUtil.ContinueOnAddOnLoaded(addonName, function()
 
 	for i = 1, #Private.LoginFnQueue do
 		local fn = Private.LoginFnQueue[i]
-		print(i, fn)
 		fn()
 	end
 
