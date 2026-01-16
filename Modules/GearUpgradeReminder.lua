@@ -6,7 +6,9 @@ local Private = select(2, ...)
 --     return acc
 -- }, {})))
 
-local bonusToTierMap = Private.IsMidnight and {
+local isMidnight = select(4, GetBuildInfo()) >= 120000
+
+local bonusToTierMap = isMidnight and {
 	[13332] = "Raid Finder",
 	[13334] = "Heroic",
 	[13335] = "Mythic",
@@ -75,7 +77,7 @@ local bonusToTierMap = Private.IsMidnight and {
 --     return acc
 -- }, {})).replaceAll(':', '=').replaceAll('"', ''))
 
-local tiers = Private.IsMidnight
+local tiers = isMidnight
 		and {
 			Adventurer = { min = 220, max = 237 },
 			Veteran = { min = 233, max = 250 },
@@ -92,7 +94,7 @@ local tiers = Private.IsMidnight
 		Myth = { min = 707, max = 730 },
 	}
 
-local craftedBonusIds = Private.IsMidnight
+local craftedBonusIds = isMidnight
 		and {
 			[12066] = true, -- Radiance Crafted
 			-- https://wago.tools/db2/ItemBonus?filter%5BValue_2%5D=2061%7C2062%7C2063&page=1
@@ -106,7 +108,7 @@ local craftedBonusIds = Private.IsMidnight
 		[12050] = true, -- Starlight Crafted
 	}
 
-local crestFreeItemLevelUpgradeThreshold = Private.IsMidnight and 999 or 580
+local crestFreeItemLevelUpgradeThreshold = isMidnight and 999 or 580
 
 local function GetUpgradeTrack(bonusIds)
 	for i = 1, #bonusIds do
@@ -175,7 +177,7 @@ EventRegistry:RegisterFrameEventAndCallback("PLAYER_EQUIPMENT_CHANGED", function
 		if itemLoc:IsValid() then
 			local currentItemLevel = C_Item.GetCurrentItemLevel(itemLoc)
 
-			if currentItemLevel >= (Private.IsMidnight and tiers.Adventurer.min or tiers.Explorer.min) then
+			if currentItemLevel >= (isMidnight and tiers.Adventurer.min or tiers.Explorer.min) then
 				local itemLink = C_Item.GetItemLink(itemLoc)
 
 				if itemLink then

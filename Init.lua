@@ -1,7 +1,5 @@
 local addonName, Private = ...
 
-Private.IsMidnight = select(4, GetBuildInfo()) >= 120000
-
 -- Zone Change Print
 -- do
 -- 	local seenMaps = {}

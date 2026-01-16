@@ -1,6 +1,6 @@
 local addonName, Private = ...
 
-if not Private.IsMidnight then
+if select(4, GetBuildInfo()) < 120000 then
 	return
 end
 
