@@ -11,8 +11,6 @@ EventUtil.ContinueOnAddOnLoaded(addonName, function()
 		Private.IsXeph = true
 	end
 
-	print(name, realm, Private.IsXeph)
-
 	for i = 1, #Private.LoginFnQueue do
 		local fn = Private.LoginFnQueue[i]
 		print(i, fn)
