@@ -1,0 +1,3 @@
+-- this turns off the alpha change of auras
+BuffFrame.AuraContainer.GetAuraWarningAlphaForDuration = nil
+DebuffFrame.AuraContainer.GetAuraWarningAlphaForDuration = nil
