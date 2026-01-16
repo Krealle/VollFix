@@ -7,7 +7,13 @@ EventRegistry:RegisterFrameEventAndCallback("GROUP_JOINED", function()
 
 	local function DoGreeting()
 		if not InCombatLockdown() then
-			local greeting = math.random(1, 100) <= 5 and "hello everypony" or "hi"
+			local num = math.random(1, 100)
+			local greeting = "hi"
+			if num <= 5 then
+				greeting = "hello everypony"
+			elseif num <= 10 then
+				greeting = "meowdy"
+			end
 
 			C_ChatInfo.SendChatMessage(greeting, "PARTY")
 		end
