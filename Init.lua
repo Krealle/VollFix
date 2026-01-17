@@ -5,9 +5,8 @@ Private.IsXeph = false
 
 EventUtil.ContinueOnAddOnLoaded(addonName, function()
 	local name = UnitName("player")
-	local realm = GetNormalizedRealmName()
 
-	if name == "Xephyris" and realm == "Blackrock" then
+	if name == "Xephyris" then
 		Private.IsXeph = true
 	end
 
