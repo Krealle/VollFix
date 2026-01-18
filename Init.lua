@@ -1,7 +1,10 @@
 local addonName, Private = ...
 
 Private.LoginFnQueue = {}
-Private.IsXeph = false
+Private.IsXeph = true
+Private.Log = function(...)
+    print("|c00FF00DD"..addonName..":|r", ...)
+end
 
 EventUtil.ContinueOnAddOnLoaded(addonName, function()
 	local name = UnitName("player")

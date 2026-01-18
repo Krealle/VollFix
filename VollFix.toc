@@ -1,5 +1,5 @@
 ## Interface: 1125000, 120000, 120001
-## Title: XephFix
+## Title: VollFix
 ## DefaultState: Enabled
 ## OptionalDeps: !!AddonLocale
 
@@ -13,9 +13,8 @@ Modules/CharacterStatsFormatting.lua
 Modules/CleanNamesInInstances.lua
 Modules/CurrentExpansionOnlyAuctionHouseFilter.lua
 Modules/DraggableFrames.lua
-Modules/EncounterProgressWhisper.lua
 Modules/FocusCastBar.lua
-Modules/FocusMarkerAnnouncement.lua
+#Modules/FocusMarkerAnnouncement.lua
 Modules/GearUpgradeRankTooltipRenamer.lua
 Modules/GearUpgradeReminder.lua
 Modules/MDTSim.lua

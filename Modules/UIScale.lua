@@ -21,6 +21,7 @@ table.insert(Private.LoginFnQueue, function()
 			SetCVar("uiScale", numberedScale)
 		end
 
+        Private.Log("[UIScale] Setting UIParent Scale from:", UIParent:GetScale(), "to:", numberedScale)
 		UIParent:SetScale(numberedScale)
 	end
 
