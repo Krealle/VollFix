@@ -4,8 +4,9 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_PlayerSpells", function()
     -- Evoker Tech
     if select(2, UnitClass("player")) ~= "EVOKER" then return end
 
-	local tempFrame = CreateFrame("Frame", nil, PlayerSpellsFrame)
+    local tempFrame = CreateFrame("Frame", nil, PlayerSpellsFrame)
     local frameParent = tempFrame:GetParent()
+    if not frameParent then return end
 
     frameParent.Bg:Hide()
 
