@@ -25,3 +25,4 @@ Modules/TurnSpeed.lua
 Modules/UIScale.lua
 Modules/WeakAuras.lua
 Modules/CustomTalentBackground.lua
+Modules/DungeonJournalSpecIcons.lua
