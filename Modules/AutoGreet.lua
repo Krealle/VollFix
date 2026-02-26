@@ -14,7 +14,7 @@ EventRegistry:RegisterFrameEventAndCallback("GROUP_JOINED", function()
             elseif num <= 10 then
                 greeting = "meowdy"
             elseif num <= 25 then
-                greeting = "Selamat Pagi"
+                greeting = "selamat pagi"
             end
 
             C_ChatInfo.SendChatMessage(greeting, "PARTY")
