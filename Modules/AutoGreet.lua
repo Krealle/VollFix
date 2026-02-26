@@ -13,6 +13,8 @@ EventRegistry:RegisterFrameEventAndCallback("GROUP_JOINED", function()
                 greeting = "hello everypony"
             elseif num <= 10 then
                 greeting = "meowdy"
+            elseif num <= 25 then
+                greeting = "Selamat Pagi"
             end
 
             C_ChatInfo.SendChatMessage(greeting, "PARTY")
@@ -25,6 +27,6 @@ EventRegistry:RegisterFrameEventAndCallback("GROUP_JOINED", function()
             EventRegistry:UnregisterFrameEventAndCallback("PLAYER_REGEN_ENABLED", ownerId)
         end)
     else
-        C_Timer.After(2, DoGreeting)
+        C_Timer.After(3, DoGreeting)
     end
 end)
